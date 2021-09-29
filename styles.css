@@ -1,5 +1,5 @@
 #top-bar {
-    border: 3p solid green;
+    border: 3px solid green;
     width: 100%;
     display: flex;
 }
@@ -21,10 +21,19 @@ nav {
 
 nav div {
     margin-right: 10px;
+    
 }
 
 main {
+    width: 100%;
     display: grid;
     grid-template-columns: 640px 1fr 1fr;
     grid-template-rows: 335px 335px;
+    grid-template-areas:
+        "big story1 story2"
+        "big story3 story4"
+}
+
+#big {
+    grid-area: big;
 }
